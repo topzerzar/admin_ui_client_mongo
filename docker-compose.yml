@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+
+### Workspace Utilities Container ###########################
+    portfolio_pumping_nodejs:
+        image: registry.thinknet.co.th/sredev/nodejs:boron
+        ports:
+            - "8080:8080"
+        volumes:
+            - .:/usr/src/app
+
+    ### MongoDB Container #######################################
+    portfolio_pumping_mongo:
+        image: registry.thinknet.co.th/sredev/mongo:3.2
+        ports:
+            - "27017:27017"
+        volumes:
+            - ./data/mongo:/data/db
+
+### Add more Containers below ###############################
+# use [ docker network create microservicenetwork ] เพื่อสร้าง mapmagiccloud(your network name้) network ขึ้นมาก่อน
+networks:
+    default:
+        external:
+            name: microservicenetwork
