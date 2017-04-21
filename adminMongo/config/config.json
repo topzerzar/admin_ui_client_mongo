@@ -1,0 +1,8 @@
+{
+  "connections": {
+    "test_ui": {
+      "connection_string": "mongodb://localhost:27017/test_ui_mongo",
+      "connection_options": {}
+    }
+  }
+}
