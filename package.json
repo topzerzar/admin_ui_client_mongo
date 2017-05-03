@@ -36,6 +36,7 @@
     "json-api-serializer": "^1.1.0",
     "json-safe-parse": "0.0.2",
     "method-override": "^2.3.6",
+    "mongo-express": "^0.39.2",
     "mongodb": "^2.2.25",
     "morgan": "^1.7.0",
     "multer": "^1.1.0",
